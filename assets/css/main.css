@@ -373,6 +373,7 @@ input, select, textarea {
 		text-align: center;
 		top: 0;
 		width: 100%;
+		padding-bottom: 300px;
 	}
 
 		#main:before {
@@ -678,7 +679,7 @@ input, select, textarea {
 					border: solid 1px #fff;
 					display: block;
 					font-size: 1.75em;
-					height: 2.5em;
+					height: 5em;
 					line-height: 2.5em;
 					position: relative;
 					text-align: center;
@@ -1070,7 +1071,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 412.5px auto;
+			background-size: 400px auto;
 			width: 1237.5px;
 		}
 
