@@ -1087,20 +1087,13 @@ input, select, textarea {
 			height: auto; /* Keep the aspect ratio intact */
 		}
 
-		body {
-			font-family: Arial, sans-serif;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			margin: 0;
-			background-color: #f0f0f0;
-		}
 		
 		.button-list {
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
 			gap: 10px;
+			flex-wrap: wrap;  /* Allows buttons to wrap when screen size decreases */
+			padding: 10px;
 		}
 		
 		.button {
@@ -1109,30 +1102,67 @@ input, select, textarea {
 			align-items: center;
 			text-decoration: none;
 			color: black;
-			
 			border-radius: 50%;
-			width: 110px;
-			height: 110px;
+			width: 100px;
+			height: 100px;
 			padding: 10px;
-		
+			transition: transform 0.2s ease; /* Added smooth transition */
 		}
 		
 		.button:hover {
 			transform: scale(1.1);
-			
 		}
 		
 		.button-image {
-				width: 100px;
-				height: 100px;
-				overflow: hidden;
-				border-radius: 50%;
-				object-fit: cover;
-			}
+			width: 120%;
+			height: 120%;
+			overflow: hidden;
+			border-radius: 50%;
+			object-fit: cover;
+		}
 		
 		.button-text {
-			margin-top: 20px;
+			margin-top: 10px;
 			font-size: 14px;
 			text-align: center;
 		}
+		
+		/* Media Queries for responsiveness */
+		
+		@media (max-width: 1200px) {
+			.button {
+				width: 4.5rem;
+				height: 4.5rem;
+			}
+		
+			.button-text {
+				font-size: 12px;
+				margin-top: 8px;
+			}
+		}
+		
+		@media (max-width: 768px) {
+			.button {
+				width: 4rem;
+				height: 4rem;
+			}
+		
+			.button-text {
+				font-size: 11px;
+				margin-top: 6px;
+			}
+		}
+		
+		@media (max-width: 480px) {
+			.button {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+		
+			.button-text {
+				font-size: 10px;
+				margin-top: 4px;
+			}
+		}
+		
 		
