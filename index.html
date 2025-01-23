@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,10 +20,14 @@
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
+			
 			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
+						<div class="gamo">
+						<div id="google_translate_element"></div>
+					</div>
 						<img src="assets\css\images\perla logo site.png" alt="Perla Homes Logo" id="logo" />
 
 
@@ -33,19 +38,19 @@
 								<div class="button-list">
 									<a href="Checkin.html" class="button">
 										<img src="assets/css/images/3d-illustration-check-in-button-for-infographics-free-png.webp" alt="Image 1" class="button-image">
-										<p class="button-text">Check in</p>
+										<h2 class="button-text">Check in</h2>
 									</a>
 									<a href="page1.html" class="button">
 										<img src="assets/css/images/wifi2.png" alt="Image 1" class="button-image">
-										<p class="button-text">Wi-Fi</p>
+										<h2 class="button-text">Wi-Fi</h2>
 									</a>
 									<a href="page1.html" class="button">
 										<img src="assets/css/images/perla logo site.png" alt="Image 1" class="button-image">
-										<p class="button-text">Page 1</p>
+										<h1 class="button-text">Contact</h1>
 									</a>
 									<a href="page2.html" class="button">
 										<img src="assets/css/images/Smilin.jpg" alt="Image 2" class="button-image">
-										<p class="button-text">Page 2</p>
+										<h1 class="button-text">Mobi </h1>
 									</a>
 									</a>
 								</div>
@@ -65,5 +70,16 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
+		<script src="script.js"></script>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({
+					pageLanguage: 'en',
+					includedLanguages: 'en,el,it,pt,ro,es,fr,ka,de,cs,hy,sq,ru', // Add more languages as needed
+					layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+				}, 'google_translate_element');
+			}
+		</script>
+			<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>

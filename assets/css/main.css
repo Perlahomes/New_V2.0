@@ -122,6 +122,9 @@ input, select, textarea {
 			border-color: transparent;
 		}
 
+
+
+	
 /* Icon */
 
 	.icon {
@@ -1123,9 +1126,10 @@ input, select, textarea {
 		}
 		
 		.button-text {
-			margin-top: 10px;
+			margin-top: 15px;
 			font-size: 14px;
 			text-align: center;
+			color: #fff;
 		}
 		
 		/* Media Queries for responsiveness */
@@ -1137,8 +1141,9 @@ input, select, textarea {
 			}
 		
 			.button-text {
-				font-size: 12px;
+				font-size: 15px;
 				margin-top: 8px;
+				color: #fff;
 			}
 		}
 		
@@ -1149,8 +1154,9 @@ input, select, textarea {
 			}
 		
 			.button-text {
-				font-size: 11px;
+				font-size: 15px;
 				margin-top: 6px;
+				color: #fff;
 			}
 		}
 		
@@ -1161,9 +1167,17 @@ input, select, textarea {
 			}
 		
 			.button-text {
-				font-size: 10px;
+				font-size: 15px;
 				margin-top: 4px;
+				color: #fff;
+				
 			}
 		}
 		
+			.gamo{
+				text-align: justify;
+				background: none;
+				padding-bottom: 180px;
+				
+			}
 		
